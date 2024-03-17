@@ -239,3 +239,40 @@ console.log(array3);
 
 
 
+
+//splice()
+//Adicionar elementos com splice():
+
+let fruits = ['apple', 'banana', 'orange', 'grape'];
+// Adicionando um elemento ('kiwi') no índice 2
+fruits.splice(2, 0, 'kiwi');
+console.log(fruits); // Output: ['apple', 'banana', 'kiwi', 'orange', 'grape']
+
+// Adicionando múltiplos elementos ('mango' e 'pineapple') no índice 3
+fruits.splice(3, 0, 'mango', 'pineapple');
+console.log(fruits); // Output: ['apple', 'banana', 'kiwi', 'mango', 'pineapple', 'orange', 'grape']
+
+//Remover elementos com splice():
+
+let fruits = ['apple', 'banana', 'kiwi', 'mango', 'pineapple', 'orange', 'grape'];
+// Removendo um elemento ('kiwi') do índice 2
+fruits.splice(2, 1);
+console.log(fruits); // Output: ['apple', 'banana', 'mango', 'pineapple', 'orange', 'grape']
+
+// Removendo múltiplos elementos ('mango' e 'pineapple') do índice 2
+fruits.splice(2, 2);
+console.log(fruits); // Output: ['apple', 'banana', 'orange', 'grape']
+
+//Substituir elementos com splice():
+
+let fruits = ['apple', 'banana', 'orange', 'grape'];
+// Substituindo o elemento no índice 2 ('orange') por 'mango'
+fruits.splice(2, 1, 'mango');
+console.log(fruits); // Output: ['apple', 'banana', 'mango', 'grape']
+
+// Substituindo múltiplos elementos no índice 1 ('banana') por 'kiwi' e 'pineapple'
+fruits.splice(1, 2, 'kiwi', 'pineapple');
+console.log(fruits); // Output: ['apple', 'kiwi', 'pineapple', 'grape']
+
+
+
