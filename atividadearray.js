@@ -216,3 +216,26 @@ const usersList = [
 const orderedUsers = usersList.sort((a, b) => a.credit - b.credit);
 
 
+
+
+
+//.concat()
+//Juntar dois ou mais arrays - retorna um novo array.
+//EX1:
+const array = [1, 2, 3]
+const newArray = array.concat([4, 5])
+
+console.log(array) // [1,2,3]
+console.log(newArray) // [1,2,3,4,5] 
+
+//EX2:
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+const array3 = array1.concat(array2);
+
+console.log(array3);
+// Expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+
+
+
