@@ -164,3 +164,32 @@ function checaridade(idade) {
 
 
 
+
+
+
+//.some()
+//O .some() faz algo parecido com o .every(). 
+//A diferença é que o .every() só retorna true se todos os elementos passarem no teste
+// O .some() retorna true se pelo menos um elemento do Array passar no teste.
+//EX1:
+const usersList = [
+	{name: 'João', credit: 600},
+	{name: 'Maria', credit: 900},
+	{name: 'Carlos', credit: 300},
+	{name: 'Vanessa', credit: 200},
+];
+
+const result = usersList.some((user, index, array) => user.credit === 300);
+
+//EX2:
+const ages = [3, 10, 18, 20];
+
+ages.some(checkAdult);
+function checkAdult(age) {
+  return age > 18;
+
+
+S
+
+
+  //
