@@ -139,4 +139,28 @@ function isNegative(element, index, array) {
 
 
 
+  //.every()
+  //O método every() testa se todos os elementos do array passam pelo teste implementado pela função fornecida.
+  //Este método retorna um valor booleano.(Um valor booleano representa um valor de verdade; isto é, TRUE ou FALSE. )
+  //EX1:
+  const usersList = [
+	{name: 'João', credit: 600},
+	{name: 'Maria', credit: 900},
+	{name: 'Carlos', credit: 300},
+	{name: 'Vanessa', credit: 200},
+];
+
+const result1 = usersList.every((user, index, array) => user.credit < 1000);
+const result2 = usersList.every(user => user.credit < 500);
+
+//EX2
+const ages = [32, 33, 16, 40];
+
+ages.every(checaridade)
+
+function checaridade(idade) {
+  return idade > 18;
+}
+
+
 
