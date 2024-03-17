@@ -56,4 +56,59 @@ console.log(arrInvertido); // [5, 4, 3, 2, 1]
 
 
 
+//.filter()
+//O método filter serve para filtrarmos os elementos de um Array. Passamos para ele uma função.
+//Se essa função retornar true, o elemento será inserido no novo Array que será criado.
+// Se a função retornar false, o elemento será ignorado.
+//EX1:
+var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function buscarNumerosPares (value) {
+    if (value % 2 == 0) 
+    return value;
+}
+var numerosPares = numeros.filter(buscarNumerosPares);
+console.log(numerosPares);
+
+//EX2:
+var estados = ["São Paulo", "Minas Gerais", "Rio de Janeiro", "Rio Grande do Norte", "Santa Catarina", "Acre"];
+function retornaEstado (value){
+    if (value.charAt(0) == "S") 
+    return value;
+}
+var resultado = estados.filter(retornaEstado);
+console.log(resultado)
+
+
+
+
+
+//.find()
+//Utiliza-se  esse método quando queremos encontrar algum elemento dentro no Array.
+// Para isso, passamos uma função que irá retornar true ou false.
+// O primeiro true que for retornado irá finalizar a função e retornar o elemento em que estamos.
+//EX1:
+const usersList = [
+	{name: 'João', credit: 600},
+	{name: 'Maria', credit: 900},
+	{name: 'Carlos', credit: 300},
+	{name: 'Vanessa', credit: 200},
+];
+
+const carlos = usersList.find((user, index, array) => user.name === 'Carlos');
+/* Resultado:
+	{name: 'Carlos', credit: 300}
+*/
+
+//EX2:
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find((element) => element > 10);
+
+console.log(found);
+// Expected output: 12
+
+
+
+
+
 
