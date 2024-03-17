@@ -29,3 +29,21 @@ const daysOfWeek = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado',
 const weekend = daysOfWeek.slice(-2);
 
 console.log(weekend); // Saída: ['Sábado', 'Domingo']
+
+
+
+
+
+//.reverse()
+//O método reverse() é usado para inverter a ordem dos elementos em um array. O método reverse() altera o array original.
+//EX1:
+var arr = [1, 2, 3, 4, 5];
+arr.reverse();
+console.log(arr); // [5, 4, 3, 2, 1
+
+//EX2:Caso você precise manter uma cópia da estrutura original podemos utilizar o slice em conjunto do reverse
+//Fazendo com que um novo array seja criado, independente do primeiro e depois o invertemos
+var arr = [1, 2, 3, 4, 5];
+var arrInvertido = arr.slice(0).reverse();
+console.log(arr); // [1, 2, 3, 4, 5]
+console.log(arrInvertido); // [5, 4, 3, 2, 1]
