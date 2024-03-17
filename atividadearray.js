@@ -111,4 +111,32 @@ console.log(found);
 
 
 
+//.findIndex()
+//Faz o mesmo que o .find(), mas retorna o índice do elemento encontrado ao invés de retornar o próprio elemento.
+//EX1:
+const usersList = [
+	{name: 'João', credit: 600},
+	{name: 'Maria', credit: 900},
+	{name: 'Carlos', credit: 300},
+	{name: 'Vanessa', credit: 200},
+];
+
+const carlos = usersList.findIndex((user, index, array) => user.name === 'Carlos');
+/* Resultado:
+	2
+*/
+
+//EX2:
+function isNegative(element, index, array) {
+    return element < 0;
+  }
+  
+  const int8 = new Int8Array([10, -20, 30, -40, 50]);
+  
+  console.log(int8.findIndex(isNegative));
+  // Expected output: 1
+
+
+
+
 
