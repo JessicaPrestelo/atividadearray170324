@@ -189,7 +189,30 @@ function checkAdult(age) {
   return age > 18;
 
 
-S
 
 
-  //
+
+//.sort()
+//O .sort() serve para ordenar os elementos de Arrays.
+//EX1:
+const numbersList = [4, 5, 7, 8, 2];
+const orderedList = numbersList.sort((a, b) => {
+	if(a < b){
+	   return -1;
+	} else if(a > b){
+		return 1;
+	}
+	return 0;
+})
+
+//EX2:
+const usersList = [
+	{name: 'João', credit: 600},
+	{name: 'Maria', credit: 900},
+	{name: 'Carlos', credit: 300},
+	{name: 'Vanessa', credit: 200},
+];
+
+const orderedUsers = usersList.sort((a, b) => a.credit - b.credit);
+
+
